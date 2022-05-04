@@ -28,7 +28,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests().anyRequest().authenticated()
         .and()
       .formLogin()
-//      	  .loginPage("/login")
           .defaultSuccessUrl("/movielist", true)
           .permitAll()
           .and()
