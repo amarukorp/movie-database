@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"
+	th:href="@{css/bootstrap.min.css}" />
+<title>Spring Security Example</title>
+</head>
+<body class="container">
+	<h2>Movie Database</h2>
+	<h3>Log in</h3>
+	<form th:object="${user}" name="f" th:action="@{/login}" method="post">
+		<!-- Email input -->
+		<div class="form-outline mb-4">
+			<input type="username" id="username" class="form-control" /> <label
+				class="form-label" for="username">User name</label>
+		</div>
+
+		<!-- Password input -->
+		<div class="form-outline mb-4">
+			<input type="password" id="password" class="form-control" /> <label
+				class="form-label" for="password">Password</label>
+		</div>
+		<!-- Submit button -->
+		<input type="submit" class="btn btn-primary btn-block mb-4"></input>
+		<div class="text-center">
+			
+			
+		</div>
+		</form>
+</body>
+</html>
